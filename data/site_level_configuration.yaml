@@ -1,1 +1,3 @@
-site-name: 'dummy site'
+- site-name: 'dummy site'
+- site-location: 'krypton'
+
