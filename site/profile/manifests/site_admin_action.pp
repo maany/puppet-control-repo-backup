@@ -5,7 +5,7 @@ class profile::site_admin_action {
   owner => 'admin',
   mode => '770'
  } 
- file {'/etc/lightweight_site/site_level_configuration_file':
+ file {'/etc/lightweight_site/site_level_configuration.yaml':
     ensure => 'file',
     owner => 'admin',
     mode => '770',
