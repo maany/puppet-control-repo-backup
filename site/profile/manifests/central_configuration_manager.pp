@@ -19,7 +19,7 @@ class profile::central_configuration_manager ($site_level_configuration_file = '
     ensure => installed,
   }
   ##wget repo and send it to client##
-  vcsrepo {'/etc/lightweight-site':
+  vcsrepo {'/etc/lightweight_site/ce':
     ensure => present,
     provider => git,
     source => "$repo"
