@@ -11,10 +11,10 @@ class profile::site_admin_action {
     mode => '770',
     source => "puppet:///site_level_configuration/site_level_configuration.yaml",
   }
-  file {'/etc/lightweight_site/puppet_node_classifier.sh':
-    ensure => 'file',
-    owner => 'admin', 
-    mode => '770',
-    source => "puppet:///site_level_configuration/puppet_node_classifier.sh",
-  }
+  #file {'/etc/lightweight_site/puppet_node_classifier.sh':
+  #  ensure => 'file',
+  #  owner => 'admin', 
+  #  mode => '770',
+  #  source => "puppet:///site_level_configuration/puppet_node_classifier.sh",
+  #}
 }
