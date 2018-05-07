@@ -24,7 +24,11 @@ class profile::central_configuration_manager ($site_level_configuration_file = '
     provider => git,
     source => "$repo"
   } 
- 
+  
+ ## build image for CE container available in the repo
+  docker::image { 'cream-ce':
+    docker_file => '/etc/lightweight_site/ce/yaim/Dockerfile',
+  }
 
 
   ## ENC on client test ##
