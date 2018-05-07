@@ -13,7 +13,7 @@ class profile::central_configuration_manager ($site_level_configuration_file = '
   }
   file_line {"Modify puppet.conf: specify ENC path":
     path => '/etc/puppetlabs/puppet/puppet.conf',
-    line => 'external_nodes = /etc/lightweight_site/puppet_node_classifier.sh'
+    line => 'external_nodes = /etc/lightweight_site/puppet_node_classifiers.sh'
   }
   
 }

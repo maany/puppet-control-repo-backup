@@ -1,6 +1,7 @@
 #!/bin/bash
-$CERTNAME = $1
 
 echo "---"
 echo "classes:"
-echo "  - profile::central_configuration_manager"
+echo "  - role::central_configuration_server"
+
+exit 0
